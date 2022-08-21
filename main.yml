@@ -3,6 +3,7 @@
   roles:
     - role1
     - role2
+    - cloudalchemy.grafana
 
   tasks:
     - name: "Debug"
