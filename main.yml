@@ -1,5 +1,7 @@
 ---
 - hosts: local
+  vars_files:
+    - defaults/main.yml
   roles:
     - role1
     - role2
@@ -8,4 +10,4 @@
   tasks:
     - name: "Debug"
       debug:
-        msg: "Working Fine..."
+        msg: "Working Fine... {{ grafana_security.admin_password }}"
