@@ -1,0 +1,4 @@
+---
+- name: "Role1 Testing"
+  debug:
+    msg: "working fine Role1"
